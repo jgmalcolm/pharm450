@@ -12,16 +12,15 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 24px;
-    color: #444;
+    color: #555;
 
     -webkit-overflow-scrolling: touch;
 }
 
 /* Titles */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
     font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    color: #333;
+    color: #222;
 }
 
 h1 {
@@ -29,21 +28,16 @@ h1 {
 }
 
 h3 {
-	color: #95a5a6;
-	font-weight: 400;
 }
 
 h4 {
-	color: #95a5a6;
-	font-weight: 400;
-	font-size: 20px;
+	font-size: 28px;
 }
 
 /* Paragraph & Typographic */
 p {
     line-height: 28px;
     margin-bottom: 25px;
-    font-size: 16px;
 }
 
 .centered {
@@ -145,7 +139,6 @@ i {
 	margin-bottom: 15px;
 	color: #DE1B1B;
 	font-size: 45px;
-	font-weight: 300;
 	letter-spacing: 1px;
 }
 
