@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -57,12 +59,8 @@
 				<div class="col-lg-6">
 					<h1>Pharm450 is the easiest way to study pharmacology for STEP1.</h1>
 
-					<form class="form-inline" role="form">
-					  <div class="form-group">
-					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
-					  </div>
-					  <button type="submit" class="btn btn-danger btn-lg">Invite Me!</button>
-					</form>
+                    {% include mailchimp.html %}
+
 				</div><!-- /col-lg-6 -->
 				<div class="col-lg-6">
 					<img class="img-responsive" src="assets/img/ipad-hand.png" alt="">
@@ -108,12 +106,7 @@
 		<hr>
 		<div class="row centered">
 			<div class="col-lg-6 col-lg-offset-3">
-				<form class="form-inline" role="form">
-				  <div class="form-group">
-				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
-				  </div>
-				  <button type="submit" class="btn btn-danger btn-lg">Invite Me!</button>
-				</form>
+                {% include mailchimp.html %}
 			</div>
 			<div class="col-lg-3"></div>
 		</div><!-- /row -->
@@ -222,5 +215,12 @@
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script>
+      $('.signup').each(function(){$(this).ajaxChimp({
+        url: 'http://pharm450.us10.list-manage.com/subscribe/post?u=bd3c077c8b192175c79f5f984&amp;id=80a3eefd07'
+      })});
+    </script>
+
   </body>
 </html>
