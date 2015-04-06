@@ -14,7 +14,7 @@
 
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900|Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900|Kaushan+Script' rel='stylesheet' type='text/css'>
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -36,6 +36,20 @@
       ga('create', 'UA-61294270-1', 'auto');
       ga('send', 'pageview');
     </script>
+
+    <script>
+      var docWidth = document.documentElement.offsetWidth;
+
+      [].forEach.call(
+        document.querySelectorAll('*'),
+        function(el) {
+          if (el.offsetWidth > docWidth) {
+            console.log(el);
+          }
+        }
+      );
+    </script>
+
   </head>
 
   <body>
@@ -49,11 +63,11 @@
       </div>
     </div>
 
-	<div id="headerwrap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<h1>Pharm450 is the easiest way to study pharmacology for STEP1.</h1>
+    <div id="headerwrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Pharm450 is the easiest way to study pharmacology for STEP1.</h1>
 
                     <p>We've packed an entire course on medical pharmacology
                     into a set of entertaining videos that leverage your
@@ -62,150 +76,150 @@
 
                     <div class="wow bounceInLeft">Sign up to be notified when we go live.
                     {% include mailchimp.html %}</div>
-				</div>
+                </div>
 
-				<div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
-					<img class="img-responsive" src="http://placehold.it/500">
-				</div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
+                    <img class="img-responsive" src="http://placehold.it/500">
+                </div>
 
-			</div><!-- /row -->
-		</div><!-- /container -->
-	</div><!-- /headerwrap -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </div><!-- /headerwrap -->
 
 
-	<div class="container">
+    <div class="container">
 
-		<div class="row mt centered">
-			<div class="col-lg-6 col-lg-offset-3">
-				<h1>What is Pharm450?</h1>
+        <div class="row mt centered">
+            <div class="col-lg-6 col-lg-offset-3">
+                <h1>What is Pharm450?</h1>
 
                 We are medical students and studied for STEP1 just like you're
                 doing, so we know how boring it can be to read textbooks and
                 attend lectures.
-			</div>
-		</div><!-- /row -->
+            </div>
+        </div><!-- /row -->
 
 
-		<div class="row mt centered">
+        <div class="row mt centered">
           <div class="col-lg-6">
-		    <h4>Vivid Scenes</h4>
+            <h4>Vivid Scenes</h4>
 
-		    Lorem ipsum dolor sit amet, consectetur adipiscing
-		    elit. Quisque aliquet ullamcorper dolor, id sodales ipsum
-		    dignissim vel. Suspendisse in sem tristique, rhoncus ex sit
-		    amet, elementum enim.
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Quisque aliquet ullamcorper dolor, id sodales ipsum
+            dignissim vel. Suspendisse in sem tristique, rhoncus ex sit
+            amet, elementum enim.
           </div>
           <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s"><img src="http://placehold.it/360"></div>
-		</div>
+        </div>
 
-		<div class="row mt centered">
+        <div class="row mt centered">
           <div class="col-lg-6">
-		    <h4>Story Time</h4>
+            <h4>Story Time</h4>
 
-		    Research demonstrates that humans are much better at
-		    remembering a story than a list, so each video illustrates a
-		    unique and memorable story that ties together all the symbols
-		    into a consistent theme.  This provides powerful context that
-		    will allow you recall key details on test day.
+            Research demonstrates that humans are much better at
+            remembering a story than a list, so each video illustrates a
+            unique and memorable story that ties together all the symbols
+            into a consistent theme.  This provides powerful context that
+            will allow you recall key details on test day.
           </div>
           <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s"><img src="http://placehold.it/360"></div>
         </div> <!-- /row -->
 
-		<div class="row mt centered">
+        <div class="row mt centered">
           <div class="col-lg-6">
-		    <h4>Intuitive Symbols</h4>
+            <h4>Intuitive Symbols</h4>
 
-		    Lorem ipsum dolor sit amet, consectetur adipiscing
-		    elit. Quisque aliquet ullamcorper dolor, id sodales ipsum
-		    dignissim vel. Suspendisse in sem tristique, rhoncus ex sit
-		    amet, elementum enim.
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Quisque aliquet ullamcorper dolor, id sodales ipsum
+            dignissim vel. Suspendisse in sem tristique, rhoncus ex sit
+            amet, elementum enim.
           </div>
           <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s"><img src="http://placehold.it/360"></div>
-		</div>
-	</div><!-- /container -->
+        </div>
+    </div><!-- /container -->
 
-	<div class="container">
-		<div class="row centered">
-			<div class="col-lg-6 col-lg-offset-3 wow bounceInLeft">
+    <div class="container">
+        <div class="row centered">
+            <div class="col-lg-6 col-lg-offset-3 wow bounceInLeft">
                 {% include mailchimp.html %}
-			</div>
-			<div class="col-lg-3"></div>
-		</div><!-- /row -->
-	</div><!-- /container -->
+            </div>
+            <div class="col-lg-3"></div>
+        </div><!-- /row -->
+    </div><!-- /container -->
 
-	<div class="container centered">
-		<div class="row mt">
-			<div class="col-lg-6 col-lg-offset-3">
-				<h1>See it in action</h1>
+    <div class="container centered">
+        <div class="row mt">
+            <div class="col-lg-6 col-lg-offset-3">
+                <h1>See it in action</h1>
 
                 Sit back and learn everything you need to know about statins
                 and other medications to treat high cholesterol.
-			</div>
-		</div><!-- /row -->
+            </div>
+        </div><!-- /row -->
 
-		<div class="row mt">
+        <div class="row mt">
                 <div class="embed-responsive">
                   <iframe width="540" height="330"
                           class="embed-responsive-item"
                           src="https://www.youtube.com/embed/3r3wFNbk-uU"
                           allowfullscreen></iframe>
                 </div>
-		</div><!-- /row -->
-	</div><! --/container -->
+        </div><!-- /row -->
+    </div><! --/container -->
 
-	<div class="container">
-		<div class="row centered">
-			<div class="col-lg-6 col-lg-offset-3 wow bounceInLeft">
+    <div class="container">
+        <div class="row centered">
+            <div class="col-lg-6 col-lg-offset-3 wow bounceInLeft">
                 {% include mailchimp.html %}
-			</div>
-			<div class="col-lg-3"></div>
-		</div><!-- /row -->
-	</div><!-- /container -->
+            </div>
+            <div class="col-lg-3"></div>
+        </div><!-- /row -->
+    </div><!-- /container -->
 
-	<div class="container">
-		<div class="row mt centered">
-			<div class="col-lg-8 col-lg-offset-2">
-				<h1>What will <span class="brand">Pharm450</span> cover?</h1>
+    <div class="container">
+        <div class="row mt centered">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h1>What will <span class="brand">Pharm450</span> cover?</h1>
 
-		        <div class="row mt centered">
-			      <div class="col-lg-4">
+                <div class="row mt centered">
+                  <div class="col-lg-4">
                     Musculoskeletal</br>
                     Pulmonology</br>
                     Cardiology</br>
                     Skin</br>
-			      </div>
+                  </div>
 
-			      <div class="col-lg-4">
+                  <div class="col-lg-4">
                     Immunology</br>
                     Hematology</br>
                     Psychiatry</br>
                     Neurology</br>
                     Autonomic</br>
-			      </div>
+                  </div>
 
-			      <div class="col-lg-4">
+                  <div class="col-lg-4">
                     Gastrointestinal</br>
                     Reproductive</br>
                     Endocrine</br>
                     Renal</br>
-			      </div>
-		        </div><!-- /row -->
+                  </div>
+                </div><!-- /row -->
 
                 We're hard at work distilling the most dense pharmacology into
                 bite sized videos.  It's not ready yet, but here are all the
                 NBME subject areas of the official USMLE STEP1 in the works.
-			</div>
-		</div><!-- /row -->
-	</div><!-- /container -->
+            </div>
+        </div><!-- /row -->
+    </div><!-- /container -->
 
-	<div class="container">
-		<div class="row centered">
-			<div class="col-lg-6 col-lg-offset-3 wow bounceInLeft">
+    <div class="container">
+        <div class="row centered">
+            <div class="col-lg-6 col-lg-offset-3 wow bounceInLeft">
                 {% include mailchimp.html %}
-			</div>
-			<div class="col-lg-3"></div>
-		</div><!-- /row -->
-	</div><!-- /container -->
+            </div>
+            <div class="col-lg-3"></div>
+        </div><!-- /row -->
+    </div><!-- /container -->
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
