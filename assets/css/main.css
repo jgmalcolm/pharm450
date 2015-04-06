@@ -143,3 +143,7 @@ i {
 .brand {
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
+
+.signup {
+    margin-bottom: 20px;
+}
